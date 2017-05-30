@@ -1,0 +1,6 @@
+E:\uk\elite\wftest\MyDemo\MyDemo\bin\MyDemo.dll.config
+E:\uk\elite\wftest\MyDemo\MyDemo\bin\MyDemo.dll
+E:\uk\elite\wftest\MyDemo\MyDemo\bin\MyDemo.pdb
+E:\uk\elite\wftest\MyDemo\MyDemo\obj\Release\MyDemo.csprojResolveAssemblyReference.cache
+E:\uk\elite\wftest\MyDemo\MyDemo\obj\Release\MyDemo.dll
+E:\uk\elite\wftest\MyDemo\MyDemo\obj\Release\MyDemo.pdb

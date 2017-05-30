@@ -1,0 +1,5 @@
+E:\uk\elite\wftest\MyDemo\MyDemo\bin\Elite.dll.config
+E:\uk\elite\wftest\MyDemo\MyDemo\bin\Elite.dll
+E:\uk\elite\wftest\MyDemo\MyDemo\bin\Elite.pdb
+E:\uk\elite\wftest\MyDemo\MyDemo\obj\Debug\Elite.dll
+E:\uk\elite\wftest\MyDemo\MyDemo\obj\Debug\Elite.pdb

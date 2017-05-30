@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\uk\elite\wftest\pub</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Elite.dll">
+      <publishTime>03/13/2017 03:45:55</publishTime>
+    </File>
+    <File Include="bin/MyDemo.dll">
+      <publishTime>02/25/2017 12:14:40</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>02/03/2017 05:10:46</publishTime>
+    </File>
+    <File Include="global/css/Calendar.css">
+      <publishTime>02/03/2017 05:10:56</publishTime>
+    </File>
+    <File Include="global/css/Calendar1.css">
+      <publishTime>02/03/2017 05:10:56</publishTime>
+    </File>
+    <File Include="global/css/CalendarPrint.css">
+      <publishTime>02/03/2017 05:10:56</publishTime>
+    </File>
+    <File Include="global/css/CalendarPrint1.css">
+      <publishTime>02/03/2017 05:10:56</publishTime>
+    </File>
+    <File Include="global/css/DashboardPrint.css">
+      <publishTime>02/03/2017 05:10:55</publishTime>
+    </File>
+    <File Include="global/css/global.css">
+      <publishTime>03/07/2017 10:04:02</publishTime>
+    </File>
+    <File Include="global/css/print.css">
+      <publishTime>02/03/2017 05:10:55</publishTime>
+    </File>
+    <File Include="global/css/Remoteglobal.css">
+      <publishTime>02/03/2017 05:10:55</publishTime>
+    </File>
+    <File Include="global/images/addthis.png">
+      <publishTime>02/03/2017 05:11:04</publishTime>
+    </File>
+    <File Include="global/images/alert-bg.png">
+      <publishTime>02/03/2017 05:11:04</publishTime>
+    </File>
+    <File Include="global/images/arrow.gif">
+      <publishTime>02/03/2017 05:11:04</publishTime>
+    </File>
+    <File Include="global/images/arrow_down.gif">
+      <publishTime>02/03/2017 05:11:03</publishTime>
+    </File>
+    <File Include="global/images/arrow_up.gif">
+      <publishTime>02/03/2017 05:11:03</publishTime>
+    </File>
+    <File Include="global/images/Azamara.png">
+      <publishTime>02/03/2017 05:11:03</publishTime>
+    </File>
+    <File Include="global/images/boydlogo.gif">
+      <publishTime>02/03/2017 05:11:03</publishTime>
+    </File>
+    <File Include="global/images/CasinosAtSea.png">
+      <publishTime>02/03/2017 05:11:02</publishTime>
+    </File>
+    <File Include="global/images/CasinosAtSeaOLD.png">
+      <publishTime>02/03/2017 05:11:03</publishTime>
+    </File>
+    <File Include="global/images/CasinosAtSeaRed.gif">
+      <publishTime>02/03/2017 05:11:03</publishTime>
+    </File>
+    <File Include="global/images/ccast-print.gif">
+      <publishTime>02/03/2017 05:11:02</publishTime>
+    </File>
+    <File Include="global/images/ccast.gif">
+      <publishTime>02/03/2017 05:11:02</publishTime>
+    </File>
+    <File Include="global/images/ccastlogo.jpg">
+      <publishTime>02/03/2017 05:11:02</publishTime>
+    </File>
+    <File Include="global/images/CroppedPCILogo.gif">
+      <publishTime>02/03/2017 05:11:02</publishTime>
+    </File>
+    <File Include="global/images/editthis.gif">
+      <publishTime>02/03/2017 05:11:02</publishTime>
+    </File>
+    <File Include="global/images/export.png">
+      <publishTime>02/03/2017 05:11:00</publishTime>
+    </File>
+    <File Include="global/images/help-lg.png">
+      <publishTime>02/03/2017 05:11:00</publishTime>
+    </File>
+    <File Include="global/images/help-space.gif">
+      <publishTime>02/03/2017 05:11:00</publishTime>
+    </File>
+    <File Include="global/images/info.png">
+      <publishTime>02/03/2017 05:11:00</publishTime>
+    </File>
+    <File Include="global/images/info_half.png">
+      <publishTime>02/03/2017 05:10:59</publishTime>
+    </File>
+    <File Include="global/images/logo-print.gif">
+      <publishTime>02/03/2017 05:11:00</publishTime>
+    </File>
+    <File Include="global/images/Logo.gif">
+      <publishTime>02/03/2017 05:10:59</publishTime>
+    </File>
+    <File Include="global/images/logo.png">
+      <publishTime>02/03/2017 05:10:59</publishTime>
+    </File>
+    <File Include="global/images/pci-logo.gif">
+      <publishTime>02/03/2017 05:10:58</publishTime>
+    </File>
+    <File Include="global/images/printer-lg.png">
+      <publishTime>02/03/2017 05:10:58</publishTime>
+    </File>
+    <File Include="global/images/qbut.gif">
+      <publishTime>02/03/2017 05:10:58</publishTime>
+    </File>
+    <File Include="global/images/qbut.svg">
+      <publishTime>02/03/2017 05:10:58</publishTime>
+    </File>
+    <File Include="global/images/RCCL.gif">
+      <publishTime>02/03/2017 05:10:58</publishTime>
+    </File>
+    <File Include="global/images/RCCL2.gif">
+      <publishTime>02/03/2017 05:10:57</publishTime>
+    </File>
+    <File Include="global/images/sms.png">
+      <publishTime>02/03/2017 05:10:58</publishTime>
+    </File>
+    <File Include="global/jquery/css/fonts7.css">
+      <publishTime>02/03/2017 05:11:07</publishTime>
+    </File>
+    <File Include="global/jquery/css/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>02/03/2017 05:11:10</publishTime>
+    </File>
+    <File Include="global/jquery/css/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>02/03/2017 05:11:10</publishTime>
+    </File>
+    <File Include="global/jquery/css/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>02/03/2017 05:11:09</publishTime>
+    </File>
+    <File Include="global/jquery/css/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>02/03/2017 05:11:10</publishTime>
+    </File>
+    <File Include="global/jquery/css/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>02/03/2017 05:11:09</publishTime>
+    </File>
+    <File Include="global/jquery/css/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>02/03/2017 05:11:11</publishTime>
+    </File>
+    <File Include="global/jquery/css/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>02/03/2017 05:11:09</publishTime>
+    </File>
+    <File Include="global/jquery/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>02/03/2017 05:11:08</publishTime>
+    </File>
+    <File Include="global/jquery/css/images/ui-icons_222222_256x240.png">
+      <publishTime>02/03/2017 05:11:08</publishTime>
+    </File>
+    <File Include="global/jquery/css/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>02/03/2017 05:11:08</publishTime>
+    </File>
+    <File Include="global/jquery/css/images/ui-icons_454545_256x240.png">
+      <publishTime>02/03/2017 05:11:08</publishTime>
+    </File>
+    <File Include="global/jquery/css/images/ui-icons_888888_256x240.png">
+      <publishTime>02/03/2017 05:11:08</publishTime>
+    </File>
+    <File Include="global/jquery/css/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>02/03/2017 05:11:07</publishTime>
+    </File>
+    <File Include="global/jquery/css/jquery-ui-1.8.custom.css">
+      <publishTime>02/03/2017 05:11:07</publishTime>
+    </File>
+    <File Include="global/jquery/css/jquery-ui.css">
+      <publishTime>02/03/2017 05:11:08</publishTime>
+    </File>
+    <File Include="global/jquery/css/print7.css">
+      <publishTime>02/03/2017 05:11:05</publishTime>
+    </File>
+    <File Include="global/jquery/css/responsive7.css">
+      <publishTime>02/03/2017 05:11:06</publishTime>
+    </File>
+    <File Include="global/jquery/css/screen7.css">
+      <publishTime>02/03/2017 05:11:06</publishTime>
+    </File>
+    <File Include="global/jquery/css/smoothness/images/animated-overlay.gif">
+      <publishTime>02/03/2017 05:11:15</publishTime>
+    </File>
+    <File Include="global/jquery/css/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>02/03/2017 05:11:14</publishTime>
+    </File>
+    <File Include="global/jquery/css/smoothness/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>02/03/2017 05:11:15</publishTime>
+    </File>
+    <File Include="global/jquery/css/smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>02/03/2017 05:11:14</publishTime>
+    </File>
+    <File Include="global/jquery/css/smoothness/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>02/03/2017 05:11:15</publishTime>
+    </File>
+    <File Include="global/jquery/css/smoothness/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>02/03/2017 05:11:14</publishTime>
+    </File>
+    <File Include="global/jquery/css/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>02/03/2017 05:11:14</publishTime>
+    </File>
+    <File Include="global/jquery/css/smoothness/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>02/03/2017 05:11:13</publishTime>
+    </File>
+    <File Include="global/jquery/css/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>02/03/2017 05:11:13</publishTime>
+    </File>
+    <File Include="global/jquery/css/smoothness/images/ui-icons_222222_256x240.png">
+      <publishTime>02/03/2017 05:11:14</publishTime>
+    </File>
+    <File Include="global/jquery/css/smoothness/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>02/03/2017 05:11:13</publishTime>
+    </File>
+    <File Include="global/jquery/css/smoothness/images/ui-icons_454545_256x240.png">
+      <publishTime>02/03/2017 05:11:12</publishTime>
+    </File>
+    <File Include="global/jquery/css/smoothness/images/ui-icons_888888_256x240.png">
+      <publishTime>02/03/2017 05:11:12</publishTime>
+    </File>
+    <File Include="global/jquery/css/smoothness/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>02/03/2017 05:11:12</publishTime>
+    </File>
+    <File Include="global/jquery/css/smoothness/jquery-ui-1.10.3.custom.css">
+      <publishTime>02/03/2017 05:11:12</publishTime>
+    </File>
+    <File Include="global/jquery/css/smoothness/jquery-ui-1.10.3.custom.min.css">
+      <publishTime>02/03/2017 05:11:13</publishTime>
+    </File>
+    <File Include="global/jquery/css/ui-lightness/images/animated-overlay.gif">
+      <publishTime>02/03/2017 05:11:21</publishTime>
+    </File>
+    <File Include="global/jquery/css/ui-lightness/images/ui-bg_diagonals-thick_18_b81900_40x40.png">
+      <publishTime>02/03/2017 05:11:20</publishTime>
+    </File>
+    <File Include="global/jquery/css/ui-lightness/images/ui-bg_diagonals-thick_20_666666_40x40.png">
+      <publishTime>02/03/2017 05:11:20</publishTime>
+    </File>
+    <File Include="global/jquery/css/ui-lightness/images/ui-bg_flat_10_000000_40x100.png">
+      <publishTime>02/03/2017 05:11:21</publishTime>
+    </File>
+    <File Include="global/jquery/css/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png">
+      <publishTime>02/03/2017 05:11:21</publishTime>
+    </File>
+    <File Include="global/jquery/css/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png">
+      <publishTime>02/03/2017 05:11:19</publishTime>
+    </File>
+    <File Include="global/jquery/css/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>02/03/2017 05:11:20</publishTime>
+    </File>
+    <File Include="global/jquery/css/ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.png">
+      <publishTime>02/03/2017 05:11:18</publishTime>
+    </File>
+    <File Include="global/jquery/css/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png">
+      <publishTime>02/03/2017 05:11:21</publishTime>
+    </File>
+    <File Include="global/jquery/css/ui-lightness/images/ui-bg_highlight-soft_75_ffe45c_1x100.png">
+      <publishTime>02/03/2017 05:11:19</publishTime>
+    </File>
+    <File Include="global/jquery/css/ui-lightness/images/ui-icons_222222_256x240.png">
+      <publishTime>02/03/2017 05:11:17</publishTime>
+    </File>
+    <File Include="global/jquery/css/ui-lightness/images/ui-icons_228ef1_256x240.png">
+      <publishTime>02/03/2017 05:11:18</publishTime>
+    </File>
+    <File Include="global/jquery/css/ui-lightness/images/ui-icons_ef8c08_256x240.png">
+      <publishTime>02/03/2017 05:11:17</publishTime>
+    </File>
+    <File Include="global/jquery/css/ui-lightness/images/ui-icons_ffd27a_256x240.png">
+      <publishTime>02/03/2017 05:11:16</publishTime>
+    </File>
+    <File Include="global/jquery/css/ui-lightness/images/ui-icons_ffffff_256x240.png">
+      <publishTime>02/03/2017 05:11:16</publishTime>
+    </File>
+    <File Include="global/jquery/css/ui-lightness/jquery-ui-1.10.3.custom.css">
+      <publishTime>02/03/2017 05:11:17</publishTime>
+    </File>
+    <File Include="global/jquery/css/ui-lightness/jquery-ui-1.10.3.custom.min.css">
+      <publishTime>02/03/2017 05:11:18</publishTime>
+    </File>
+    <File Include="global/jquery/js/fonts7.css">
+      <publishTime>02/03/2017 05:11:27</publishTime>
+    </File>
+    <File Include="global/jquery/js/form7.js">
+      <publishTime>02/03/2017 05:11:27</publishTime>
+    </File>
+    <File Include="global/jquery/js/jquery-1.4.2.min.js">
+      <publishTime>02/03/2017 05:11:28</publishTime>
+    </File>
+    <File Include="global/jquery/js/jquery-1.9.1.js">
+      <publishTime>02/03/2017 05:11:29</publishTime>
+    </File>
+    <File Include="global/jquery/js/jquery-2.2.0.min.js">
+      <publishTime>02/03/2017 05:11:26</publishTime>
+    </File>
+    <File Include="global/jquery/js/jquery-ui-1.10.3.custom.js">
+      <publishTime>02/03/2017 05:11:28</publishTime>
+    </File>
+    <File Include="global/jquery/js/jquery-ui-1.10.3.custom.min.js">
+      <publishTime>02/03/2017 05:11:27</publishTime>
+    </File>
+    <File Include="global/jquery/js/jquery-ui-1.8.custom.min.js">
+      <publishTime>02/03/2017 05:11:24</publishTime>
+    </File>
+    <File Include="global/jquery/js/jquery-ui.css">
+      <publishTime>02/03/2017 05:11:24</publishTime>
+    </File>
+    <File Include="global/jquery/js/jquery-ui.min.js">
+      <publishTime>02/03/2017 05:11:29</publishTime>
+    </File>
+    <File Include="global/jquery/js/jquery.min.js">
+      <publishTime>02/03/2017 05:11:24</publishTime>
+    </File>
+    <File Include="global/jquery/js/jSignature.min.js">
+      <publishTime>02/03/2017 05:11:25</publishTime>
+    </File>
+    <File Include="global/jquery/js/print7.css">
+      <publishTime>02/03/2017 05:11:23</publishTime>
+    </File>
+    <File Include="global/jquery/js/responsive7.css">
+      <publishTime>02/03/2017 05:11:23</publishTime>
+    </File>
+    <File Include="global/jquery/js/screen7.css">
+      <publishTime>02/03/2017 05:11:23</publishTime>
+    </File>
+    <File Include="global/jquery/js/styling.js">
+      <publishTime>02/03/2017 05:11:22</publishTime>
+    </File>
+    <File Include="global/ToolTips/balloontip.css">
+      <publishTime>02/03/2017 05:11:30</publishTime>
+    </File>
+    <File Include="global/ToolTips/balloontip.js">
+      <publishTime>02/03/2017 05:11:29</publishTime>
+    </File>
+    <File Include="global/ToolTips/balloontiploads.css">
+      <publishTime>02/03/2017 05:11:29</publishTime>
+    </File>
+    <File Include="Includes/incFooter.aspx">
+      <publishTime>03/12/2017 18:25:38</publishTime>
+    </File>
+    <File Include="Includes/incMasterSecurity.aspx">
+      <publishTime>03/11/2017 10:11:28</publishTime>
+    </File>
+    <File Include="Includes/incMasterUserLog.aspx">
+      <publishTime>03/11/2017 02:54:52</publishTime>
+    </File>
+    <File Include="Includes/incQuickMenu.aspx">
+      <publishTime>03/12/2017 18:34:07</publishTime>
+    </File>
+    <File Include="local/css/.DS_Store">
+      <publishTime>02/03/2017 05:11:32</publishTime>
+    </File>
+    <File Include="local/css/local.css">
+      <publishTime>02/03/2017 05:11:32</publishTime>
+    </File>
+    <File Include="local/css/print.css">
+      <publishTime>02/03/2017 05:11:32</publishTime>
+    </File>
+    <File Include="local/Dew.bak">
+      <publishTime>02/03/2017 05:11:49</publishTime>
+    </File>
+    <File Include="local/images/admin-bg.gif">
+      <publishTime>02/03/2017 05:11:46</publishTime>
+    </File>
+    <File Include="local/images/bg-top.gif">
+      <publishTime>02/03/2017 05:11:46</publishTime>
+    </File>
+    <File Include="local/images/boydlogo.gif">
+      <publishTime>02/03/2017 05:11:45</publishTime>
+    </File>
+    <File Include="local/images/boydlogo.png">
+      <publishTime>02/03/2017 05:11:46</publishTime>
+    </File>
+    <File Include="local/images/boydlogoold.gif">
+      <publishTime>02/03/2017 05:11:47</publishTime>
+    </File>
+    <File Include="local/images/CasinosAtSea.png">
+      <publishTime>02/03/2017 05:11:45</publishTime>
+    </File>
+    <File Include="local/images/CasinosAtSeaRed.gif">
+      <publishTime>02/03/2017 05:11:45</publishTime>
+    </File>
+    <File Include="local/images/ccast-print.gif">
+      <publishTime>02/03/2017 05:11:44</publishTime>
+    </File>
+    <File Include="local/images/ccast.gif">
+      <publishTime>02/03/2017 05:11:44</publishTime>
+    </File>
+    <File Include="local/images/CYA-print.gif">
+      <publishTime>02/03/2017 05:11:44</publishTime>
+    </File>
+    <File Include="local/images/CYA.png">
+      <publishTime>02/03/2017 05:11:43</publishTime>
+    </File>
+    <File Include="local/images/excel.png">
+      <publishTime>02/03/2017 05:11:43</publishTime>
+    </File>
+    <File Include="local/images/export.png">
+      <publishTime>02/03/2017 05:11:43</publishTime>
+    </File>
+    <File Include="local/images/footer-bg copy.gif">
+      <publishTime>02/03/2017 05:11:42</publishTime>
+    </File>
+    <File Include="local/images/footer-bg.gif">
+      <publishTime>02/03/2017 05:11:42</publishTime>
+    </File>
+    <File Include="local/images/h2-hover.gif">
+      <publishTime>02/03/2017 05:11:42</publishTime>
+    </File>
+    <File Include="local/images/header.bmp">
+      <publishTime>02/03/2017 05:11:43</publishTime>
+    </File>
+    <File Include="local/images/info.gif">
+      <publishTime>02/03/2017 05:11:41</publishTime>
+    </File>
+    <File Include="local/images/lg-search-button.gif">
+      <publishTime>02/03/2017 05:11:41</publishTime>
+    </File>
+    <File Include="local/images/LocationName.png">
+      <publishTime>02/03/2017 05:11:40</publishTime>
+    </File>
+    <File Include="local/images/LocationNameTest.png">
+      <publishTime>02/03/2017 05:11:41</publishTime>
+    </File>
+    <File Include="local/images/logo-print.gif">
+      <publishTime>02/03/2017 05:11:40</publishTime>
+    </File>
+    <File Include="local/images/Logo.gif">
+      <publishTime>02/03/2017 05:11:40</publishTime>
+    </File>
+    <File Include="local/images/Logo.png">
+      <publishTime>02/03/2017 05:11:39</publishTime>
+    </File>
+    <File Include="local/images/logoClear.png">
+      <publishTime>02/03/2017 05:11:39</publishTime>
+    </File>
+    <File Include="local/images/LogoOld.gif">
+      <publishTime>02/03/2017 05:11:38</publishTime>
+    </File>
+    <File Include="local/images/menu-bg.gif">
+      <publishTime>02/03/2017 05:11:38</publishTime>
+    </File>
+    <File Include="local/images/oba-print.gif">
+      <publishTime>02/03/2017 05:11:39</publishTime>
+    </File>
+    <File Include="local/images/OBA.png">
+      <publishTime>02/03/2017 05:11:38</publishTime>
+    </File>
+    <File Include="local/images/pci-logo.gif">
+      <publishTime>02/03/2017 05:11:40</publishTime>
+    </File>
+    <File Include="local/images/pcilogobig.jpg">
+      <publishTime>02/03/2017 05:11:37</publishTime>
+    </File>
+    <File Include="local/images/print-logo.gif">
+      <publishTime>02/03/2017 05:11:37</publishTime>
+    </File>
+    <File Include="local/images/Print.bmp">
+      <publishTime>02/03/2017 05:11:36</publishTime>
+    </File>
+    <File Include="local/images/refresh.gif">
+      <publishTime>02/03/2017 05:11:35</publishTime>
+    </File>
+    <File Include="local/images/search-bg.gif">
+      <publishTime>02/03/2017 05:11:35</publishTime>
+    </File>
+    <File Include="local/images/search-button.gif">
+      <publishTime>02/03/2017 05:11:36</publishTime>
+    </File>
+    <File Include="local/images/Ship.jpg">
+      <publishTime>02/03/2017 05:11:35</publishTime>
+    </File>
+    <File Include="local/images/Ship2.jpg">
+      <publishTime>02/03/2017 05:11:33</publishTime>
+    </File>
+    <File Include="local/images/sid-print.gif">
+      <publishTime>02/03/2017 05:11:34</publishTime>
+    </File>
+    <File Include="local/images/sid.gif">
+      <publishTime>02/03/2017 05:11:33</publishTime>
+    </File>
+    <File Include="local/jquery/css/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>02/03/2017 05:11:51</publishTime>
+    </File>
+    <File Include="local/jquery/css/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>02/03/2017 05:11:51</publishTime>
+    </File>
+    <File Include="local/jquery/css/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>02/03/2017 05:11:50</publishTime>
+    </File>
+    <File Include="local/jquery/css/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>02/03/2017 05:11:51</publishTime>
+    </File>
+    <File Include="local/jquery/css/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>02/03/2017 05:11:51</publishTime>
+    </File>
+    <File Include="local/jquery/css/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>02/03/2017 05:11:50</publishTime>
+    </File>
+    <File Include="local/jquery/css/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>02/03/2017 05:11:49</publishTime>
+    </File>
+    <File Include="local/jquery/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>02/03/2017 05:11:48</publishTime>
+    </File>
+    <File Include="local/jquery/css/images/ui-icons_222222_256x240.png">
+      <publishTime>02/03/2017 05:11:48</publishTime>
+    </File>
+    <File Include="local/jquery/css/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>02/03/2017 05:11:49</publishTime>
+    </File>
+    <File Include="local/jquery/css/images/ui-icons_454545_256x240.png">
+      <publishTime>02/03/2017 05:11:51</publishTime>
+    </File>
+    <File Include="local/jquery/css/images/ui-icons_888888_256x240.png">
+      <publishTime>02/03/2017 05:11:49</publishTime>
+    </File>
+    <File Include="local/jquery/css/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>02/03/2017 05:11:48</publishTime>
+    </File>
+    <File Include="local/jquery/css/jquery-ui-1.8.custom.css">
+      <publishTime>02/03/2017 05:11:50</publishTime>
+    </File>
+    <File Include="local/jquery/js/jquery-1.4.2.min.js">
+      <publishTime>02/03/2017 05:11:53</publishTime>
+    </File>
+    <File Include="local/jquery/js/jquery-ui-1.8.custom.min.js">
+      <publishTime>02/03/2017 05:11:53</publishTime>
+    </File>
+    <File Include="local/menu/incQuickMenu.asp">
+      <publishTime>02/03/2017 05:11:55</publishTime>
+    </File>
+    <File Include="local/menu/incQuickMenu2.asp">
+      <publishTime>02/03/2017 05:11:53</publishTime>
+    </File>
+    <File Include="Logon.aspx">
+      <publishTime>03/12/2017 20:02:19</publishTime>
+    </File>
+    <File Include="ProductEdit.aspx">
+      <publishTime>03/12/2017 20:42:48</publishTime>
+    </File>
+    <File Include="ProductInformation.aspx">
+      <publishTime>03/13/2017 00:17:27</publishTime>
+    </File>
+    <File Include="Products.aspx">
+      <publishTime>03/12/2017 20:51:37</publishTime>
+    </File>
+    <File Include="QuoteInformation.aspx">
+      <publishTime>03/12/2017 20:59:52</publishTime>
+    </File>
+    <File Include="QuoteInput.aspx">
+      <publishTime>03/13/2017 00:13:53</publishTime>
+    </File>
+    <File Include="Quotes.aspx">
+      <publishTime>03/12/2017 20:55:50</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/13/2017 03:13:53</publishTime>
+    </File>
+    <File Include="WebForm1.aspx">
+      <publishTime>02/25/2017 10:49:42</publishTime>
+    </File>
+    <File Include="WebForm2.aspx">
+      <publishTime>02/27/2017 00:18:51</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
