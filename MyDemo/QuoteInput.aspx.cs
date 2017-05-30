@@ -489,6 +489,11 @@ namespace MyDemo
                                 tbxMargin.Text = ds.Tables[0].Rows[0]["Margin"].ToString();
                                 tbxDutyRate.Text = ds.Tables[0].Rows[0]["DutyRate"].ToString();
                                 cbxFOBPort.SelectedValue = ds.Tables[0].Rows[0]["PortID"].ToString();
+                                tbxSetup.Text = ds.Tables[0].Rows[0]["Setup"].ToString();
+                                tbxMoldFee.Text = ds.Tables[0].Rows[0]["MoldFee"].ToString();
+                                tbxTesting.Text = ds.Tables[0].Rows[0]["Testing"].ToString();
+                                tbxPrePro.Text = ds.Tables[0].Rows[0]["PrePro"].ToString();
+                                tbxPreProTime.Text = ds.Tables[0].Rows[0]["PreProTime"].ToString();
                             }
                             else
                             {
@@ -515,7 +520,7 @@ namespace MyDemo
                                 for (; i < ds.Tables[0].Rows.Count; i++)
                                 {
                                     sb.Append(@"<tr>");
-                                    sb.Append(@"<td><input name=""tbxRMBPrice[]"" type=""text"" id=""tbxRMBPrice" + i + @""" value=""" + ds.Tables[0].Rows[i]["RMBPrice"] +@""" /></td>");
+                                    sb.Append(@"<td><input name=""tbxRMBPrice[]"" type=""text"" id=""tbxRMBPrice" + i + @""" value=""" + ds.Tables[0].Rows[i]["RMBPrice"] + @""" /></td>");
                                     sb.Append(@"<td><input name=""tbxQty[]"" type=""text"" id=""tbxQty" + i + @""" value=""" + ds.Tables[0].Rows[i]["Quantity"] + @""" /></td>");
                                     sb.Append(@"<td><input name=""tbxLeadTime[]"" type=""text"" id=""tbxLeadTime" + i + @""" value=""" + ds.Tables[0].Rows[i]["LeadTime"] + @""" /></td>");
                                     sb.Append(@"</tr>");
@@ -538,7 +543,7 @@ namespace MyDemo
                     else
                     {
                         connection.ConnectionString = connectionString;
-                        cmd = new SqlCommand("SELECT * FROM Products WHERE ProductID = @ProductID", connection);
+                        cmd = new SqlCommand("SELECT Products.*, Quotes.* FROM Products, Quotes WHERE Products.ProductID = @ProductID AND Products.ProductID = Quotes.ProductID", connection);
                         cmd.Parameters.AddWithValue("@ProductID", Int64.Parse(lngProductID));
                         da = new SqlDataAdapter(cmd);
                         ds = new DataSet();
@@ -648,7 +653,7 @@ namespace MyDemo
             {
                 if (mode == "edit")
                 {
-                    sql = "UPDATE dbo.Quotes SET ClientID = @ClientID, Project = @Project, QuoteNumber = @QuoteNumber, QuoteDate = GETDATE(), ValidDate = GETDATE() + @Valid, ExchangeRate = @ExchangeRate, Margin = @Margin, DutyRate = @DutyRate, PortID = @PortID WHERE QuoteID = @QuoteID";
+                    sql = "UPDATE dbo.Quotes SET ClientID = @ClientID, Project = @Project, QuoteNumber = @QuoteNumber, QuoteDate = GETDATE(), ValidDate = GETDATE() + @Valid, ExchangeRate = @ExchangeRate, Margin = @Margin, DutyRate = @DutyRate, PortID = @PortID, Setup = @Setup, MoldFee = @MoldFee, Testing = @Testing, PrePro = @PrePro, PreProTime = @PreProTime WHERE QuoteID = @QuoteID";
                     using (SqlConnection connection = new SqlConnection(connectionString))
                     {
                         using (SqlCommand cmd = new SqlCommand(sql, connection))
@@ -662,12 +667,18 @@ namespace MyDemo
                             cmd.Parameters.AddWithValue("@DutyRate", double.Parse(tbxDutyRate.Text));
                             cmd.Parameters.AddWithValue("@PortID", Int64.Parse(cbxFOBPort.SelectedValue));
                             cmd.Parameters.AddWithValue("@QuoteID", Int64.Parse(lngQuoteID));
+                            cmd.Parameters.AddWithValue("@Setup", double.Parse(tbxSetup.Text));
+                            cmd.Parameters.AddWithValue("@MoldFee", double.Parse(tbxMoldFee.Text));
+                            cmd.Parameters.AddWithValue("@Testing", double.Parse(tbxTesting.Text));
+                            cmd.Parameters.AddWithValue("@PrePro", double.Parse(tbxPrePro.Text));
+                            cmd.Parameters.AddWithValue("@PreProTime", Int64.Parse(tbxPreProTime.Text));
 
                             connection.Open();
                             cmd.ExecuteNonQuery();
                             connection.Close();
                         }
                     }
+             
                     sql = "DELETE FROM QuoteDetails WHERE QuoteID = @QuoteID";
                     using (SqlConnection connection = new SqlConnection(connectionString))
                     {
@@ -722,6 +733,12 @@ namespace MyDemo
                         double dblDutyRate = double.Parse(tbxDutyRate.Text) / 100;
                         double dblTotalDutyPaid = dblValueOfOrder * dblDutyRate;
                         double dblDuties = Math.Round(dblTotalDutyPaid / intQty + 0.000049, 4);
+                        double dblSetup = double.Parse(tbxSetup.Text);
+                        double dblMoldFee = double.Parse(tbxMoldFee.Text);
+                        double dblTesting = double.Parse(tbxTesting.Text);
+                        double dblPrePro = double.Parse(tbxPrePro.Text);
+                        double dblPreProTime = double.Parse(tbxPreProTime.Text);
+                        
                         int intFreightRateCode;
 
                         if (dblCBM <= 1)
@@ -768,7 +785,7 @@ namespace MyDemo
 
                         if (mode == "add" && !bMasterInserted)
                         {
-                            sql = "INSERT INTO Quotes (ClientID, Project, QuoteNumber, QuoteDate, ValidDate, ProductID, ExchangeRate, Margin, DutyRate, PortID) VALUES (@ClientID, @Project, @QuoteNumber, GETDATE(), GETDATE() + @Valid, @ProductID, @ExchangeRate, @Margin, @DutyRate, @PortID)";
+                            sql = "INSERT INTO Quotes (ClientID, Project, QuoteNumber, QuoteDate, ValidDate, ProductID, ExchangeRate, Margin, DutyRate, PortID, Setup, MoldFee, Testing, PrePro, PreProTime) VALUES (@ClientID, @Project, @QuoteNumber, GETDATE(), GETDATE() + @Valid, @ProductID, @ExchangeRate, @Margin, @DutyRate, @PortID, @Setup, @MoldFee, @Testing, @PrePro, @PreProTime)";
                             using (SqlConnection connection = new SqlConnection(connectionString))
                             {
                                 using (SqlCommand cmd = new SqlCommand(sql, connection))
@@ -782,6 +799,11 @@ namespace MyDemo
                                     cmd.Parameters.AddWithValue("@Margin", double.Parse(tbxMargin.Text));
                                     cmd.Parameters.AddWithValue("@DutyRate", double.Parse(tbxDutyRate.Text));
                                     cmd.Parameters.AddWithValue("@PortID", Int64.Parse(cbxFOBPort.SelectedValue));
+                                    cmd.Parameters.AddWithValue("@Setup", double.Parse(tbxSetup.Text));
+                                    cmd.Parameters.AddWithValue("@MoldFee", double.Parse(tbxMoldFee.Text));
+                                    cmd.Parameters.AddWithValue("@Testing", double.Parse(tbxTesting.Text));
+                                    cmd.Parameters.AddWithValue("@PrePro", double.Parse(tbxPrePro.Text));
+                                    cmd.Parameters.AddWithValue("@PreProTime", Int64.Parse(tbxPreProTime.Text));
 
                                     connection.Open();
                                     cmd.ExecuteNonQuery();
@@ -864,7 +886,7 @@ namespace MyDemo
             }
             catch (Exception ex)
             {
-                ErrorMsg.Text = "Error: Invalid data!";
+                ErrorMsg.Text = ex.Message;
                 LoadProductsData();
             }
         }

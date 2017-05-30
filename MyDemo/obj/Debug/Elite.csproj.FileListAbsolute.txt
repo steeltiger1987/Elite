@@ -3,3 +3,9 @@ E:\uk\elite\wftest\MyDemo\MyDemo\bin\Elite.dll
 E:\uk\elite\wftest\MyDemo\MyDemo\bin\Elite.pdb
 E:\uk\elite\wftest\MyDemo\MyDemo\obj\Debug\Elite.dll
 E:\uk\elite\wftest\MyDemo\MyDemo\obj\Debug\Elite.pdb
+D:\work\2017_05_30ASP.net\Elite\MyDemo\bin\Elite.dll.config
+D:\work\2017_05_30ASP.net\Elite\MyDemo\bin\Elite.dll
+D:\work\2017_05_30ASP.net\Elite\MyDemo\bin\Elite.pdb
+D:\work\2017_05_30ASP.net\Elite\MyDemo\obj\Debug\Elite.csprojResolveAssemblyReference.cache
+D:\work\2017_05_30ASP.net\Elite\MyDemo\obj\Debug\Elite.dll
+D:\work\2017_05_30ASP.net\Elite\MyDemo\obj\Debug\Elite.pdb

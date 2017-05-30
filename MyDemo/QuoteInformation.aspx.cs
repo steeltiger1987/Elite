@@ -405,7 +405,11 @@ namespace MyDemo
             string imgurl = "";
             string itemNum = "";
             string ProductName = "";
-            string Description = "";
+            string Setup = "";
+            string MoldFee = "";
+            string Testing = "";
+            string PrePro = "";
+            string PreProTime = "";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -437,7 +441,11 @@ namespace MyDemo
                                 imgurl = @"    <img src=""UploadFiles/ProductImages/NoImage.png"" alt=""some text"" style=""width: 100px; height: auto; "" />";
                             itemNum = ds.Tables[0].Rows[0]["ItemNum"].ToString();
                             ProductName = ds.Tables[0].Rows[0]["Name"].ToString();
-                            Description = ds.Tables[0].Rows[0]["Description"].ToString();
+                            Setup = ds.Tables[0].Rows[0]["Setup"].ToString();
+                            MoldFee = ds.Tables[0].Rows[0]["MoldFee"].ToString();
+                            Testing = ds.Tables[0].Rows[0]["Testing"].ToString();
+                            PrePro = ds.Tables[0].Rows[0]["PrePro"].ToString();
+                            PreProTime = ds.Tables[0].Rows[0]["PreProTime"].ToString();
                         }
                         else
                         {
@@ -472,7 +480,11 @@ namespace MyDemo
                                     sb.Append(@"<td rowspan=""5"">");
                                     sb.Append(@"    <p>ITEM: " + itemNum + @"</p>");
                                     sb.Append(@"    <p>NAME: " + ProductName + @"</p>");
-                                    sb.Append(@"    <p>" + Description + @"</p>");
+                                    sb.Append(@"    <p>Setup: $ " + Setup + @"</p>");
+                                    sb.Append(@"    <p>Mold Fee: $ " + MoldFee + @"</p>");
+                                    sb.Append(@"    <p>Testing: $ " + Testing + @"</p>");
+                                    sb.Append(@"    <p>Pre-Pro: $ " + PrePro + @"</p>");
+                                    sb.Append(@"    <p>Pre-Pro Time: " + PreProTime + @"days</p>");
                                     sb.Append(@"</td>");
                                 }
                                 sb.Append(@"<td>" + String.Format("{0:N0}", ds.Tables[0].Rows[i]["Quantity"])  + "</td>");
@@ -512,7 +524,11 @@ namespace MyDemo
                             sb.Append(@"<td rowspan=""5"">");
                             sb.Append(@"    <p>ITEM: " + itemNum + @"</p>");
                             sb.Append(@"    <p>NAME: " + ProductName + @"</p>");
-                            sb.Append(@"    <p>" + Description + @"</p>");
+                            sb.Append(@"    <p>Setup: $ " + Setup + @"</p>");
+                            sb.Append(@"    <p>Mold Fee: $ " + MoldFee + @"</p>");
+                            sb.Append(@"    <p>Testing: $ " + Testing + @"</p>");
+                            sb.Append(@"    <p>Pre-Pro: $ " + PrePro + @"</p>");
+                            sb.Append(@"    <p>Pre-Pro Time: $ " + PreProTime + @"</p>");
                             sb.Append(@"</td>");
                         }
                         sb.Append(@"<td></td>");

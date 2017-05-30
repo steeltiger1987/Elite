@@ -459,6 +459,46 @@
           <td>&nbsp;</td>
         </tr>
         <tr>
+          <td>&nbsp;</td>
+          <td align="right"><strong>Setup</strong></td>
+          <td>
+              <asp:TextBox ID="tbxSetup" runat="server"></asp:TextBox>
+          </td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td align="right"><strong>Mold fee</strong></td>
+          <td>
+              <asp:TextBox ID="tbxMoldFee" runat="server"></asp:TextBox>
+          </td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td align="right"><strong>Testing</strong></td>
+          <td>
+              <asp:TextBox ID="tbxTesting" runat="server"></asp:TextBox>
+          </td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td align="right"><strong>Pre-Pro</strong></td>
+          <td>
+              <asp:TextBox ID="tbxPrePro" runat="server"></asp:TextBox>
+          </td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td align="right"><strong>Pre-Pro Time</strong></td>
+          <td>
+              <asp:TextBox ID="tbxPreProTime" runat="server"></asp:TextBox>
+          </td>
+          <td>&nbsp;</td>
+        </tr>
+       <tr>
             <td>&nbsp;</td>
             <td colspan="2">
               <table border="0" cellspacing="0" cellpadding="0" class="box box5">
