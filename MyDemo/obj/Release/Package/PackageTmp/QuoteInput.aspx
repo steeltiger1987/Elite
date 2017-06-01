@@ -459,6 +459,51 @@
           <td>&nbsp;</td>
         </tr>
         <tr>
+          <td>&nbsp;</td>
+          <td align="right"><strong>Setup</strong></td>
+          <td>
+              <asp:TextBox ID="tbxSetup" runat="server"></asp:TextBox>
+              <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Setup value is required" ControlToValidate="tbxSetup" ForeColor="Red"></asp:RequiredFieldValidator>
+          </td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td align="right"><strong>Mold fee</strong></td>
+          <td>
+              <asp:TextBox ID="tbxMoldFee" runat="server"></asp:TextBox>
+              <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Mold fee value is required" ControlToValidate="tbxMoldFee" ForeColor="Red"></asp:RequiredFieldValidator>
+          </td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td align="right"><strong>Testing</strong></td>
+          <td>
+              <asp:TextBox ID="tbxTesting" runat="server"></asp:TextBox>
+              <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Testing value is required" ControlToValidate="tbxTesting" ForeColor="Red"></asp:RequiredFieldValidator>
+          </td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td align="right"><strong>Pre-Pro</strong></td>
+          <td>
+              <asp:TextBox ID="tbxPrePro" runat="server"></asp:TextBox>
+              <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Pre-Pro value is required" ControlToValidate="tbxPrePro" ForeColor="Red"></asp:RequiredFieldValidator>
+          </td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td align="right"><strong>Pre-Pro Time</strong></td>
+          <td>
+              <asp:TextBox ID="tbxPreProTime" runat="server"></asp:TextBox>
+              <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="Pre-Pro time value is required" ControlToValidate="tbxPreProTime" ForeColor="Red"></asp:RequiredFieldValidator>
+          </td>
+          <td>&nbsp;</td>
+        </tr>
+       <tr>
             <td>&nbsp;</td>
             <td colspan="2">
               <table border="0" cellspacing="0" cellpadding="0" class="box box5">
