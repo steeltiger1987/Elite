@@ -14,8 +14,8 @@ namespace Elite.Includes
     public partial class incMasterSecurity : System.Web.UI.Page
     {
         public string MM_authFailedURL;
-        string connectionString = @"Server=(localdb)\MSSQLLocalDB; Integrated Security=true; Initial Catalog=Elite; Trusted_Connection=yes; connection timeout=150;";
-        //string connectionString = @"Server=ccastweb.com; Database=Elite; User ID=AChen; Password=Andrew1;";
+        //string connectionString = @"Server=(localdb)\MSSQLLocalDB; Integrated Security=true; Initial Catalog=Elite; Trusted_Connection=yes; connection timeout=150;";
+        string connectionString = @"Server=ccastweb.com; Database=Elite; User ID=AChen; Password=Andrew1;";
         protected void Page_Load(object sender, EventArgs e)
         {
             // *** Restrict Access To Page: Grant or deny access to this page

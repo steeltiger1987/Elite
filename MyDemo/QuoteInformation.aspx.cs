@@ -13,8 +13,8 @@ namespace MyDemo
 {
     public partial class QuoteInformation : System.Web.UI.Page
     {
-        string connectionString = @"Server=(localdb)\MSSQLLocalDB; Integrated Security=true; Initial Catalog=Elite; Trusted_Connection=yes; connection timeout=150;";
-        //string connectionString = @"Server=ccastweb.com; Database=Elite; User ID=AChen; Password=Andrew1;";
+        //string connectionString = @"Server=(localdb)\MSSQLLocalDB; Integrated Security=true; Initial Catalog=Elite; Trusted_Connection=yes; connection timeout=150;";
+        string connectionString = @"Server=ccastweb.com; Database=Elite; User ID=AChen; Password=Andrew1;";
 
         string MM_authFailedURL;
         bool MM_grantAccess;
@@ -410,6 +410,8 @@ namespace MyDemo
             string Testing = "";
             string PrePro = "";
             string PreProTime = "";
+            string strEdit = @"<a href=""QuoteInput.aspx?lngQuoteID=" + lngQuoteID + @"&mode=edit"">";
+            string strEditEnd = @"</a>";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -478,33 +480,33 @@ namespace MyDemo
                                     sb.Append(@"    </div>");
                                     sb.Append(@"</td>");
                                     sb.Append(@"<td rowspan=""5"">");
-                                    sb.Append(@"    <p>ITEM: " + itemNum + @"</p>");
-                                    sb.Append(@"    <p>NAME: " + ProductName + @"</p>");
-                                    sb.Append(@"    <p>Setup: $ " + Setup + @"</p>");
-                                    sb.Append(@"    <p>Mold Fee: $ " + MoldFee + @"</p>");
-                                    sb.Append(@"    <p>Testing: $ " + Testing + @"</p>");
-                                    sb.Append(@"    <p>Pre-Pro: $ " + PrePro + @"</p>");
-                                    sb.Append(@"    <p>Pre-Pro Time: " + PreProTime + @"days</p>");
+                                    sb.Append(@"    <p>ITEM: "+ strEdit + itemNum + strEditEnd + @"</p>");
+                                    sb.Append(@"    <p>NAME: " + strEdit + ProductName + strEditEnd + @"</p>");
+                                    sb.Append(@"    <p>Setup: $ " + strEdit + Setup + strEditEnd + @"</p>");
+                                    sb.Append(@"    <p>Mold Fee: $ " + strEdit + MoldFee + strEditEnd + @"</p>");
+                                    sb.Append(@"    <p>Testing: $ " + strEdit + Testing + strEditEnd + @"</p>");
+                                    sb.Append(@"    <p>Pre-Pro: $ " + strEdit + PrePro + strEditEnd + @"</p>");
+                                    sb.Append(@"    <p>Pre-Pro Time: " + strEdit + PreProTime + strEditEnd + @"days</p>");
                                     sb.Append(@"</td>");
                                 }
-                                sb.Append(@"<td>" + String.Format("{0:N0}", ds.Tables[0].Rows[i]["Quantity"])  + "</td>");
-                                sb.Append(@"<td>" + String.Format("{0}", ds.Tables[0].Rows[i]["Package"]) + "</td>");
-                                sb.Append(@"<td>" + String.Format("{0:N0}", ds.Tables[0].Rows[i]["PcsPerCtn"]) + "</td>");
-                                sb.Append(@"<td>" + String.Format("{0:F1}", ds.Tables[0].Rows[i]["CtnWgtInKg"]) + "</td>");
-                                sb.Append(@"<td>" + String.Format("{0:F1}", ds.Tables[0].Rows[i]["CtnSizeInCML"]) + "</td>");
-                                sb.Append(@"<td>" + String.Format("{0:F1}", ds.Tables[0].Rows[i]["CtnSizeInCMW"]) + "</td>");
-                                sb.Append(@"<td>" + String.Format("{0:F1}", ds.Tables[0].Rows[i]["CtnSizeInCMH"]) + "</td>");
-                                sb.Append(@"<td>" + String.Format("{0:N0}", ds.Tables[0].Rows[i]["NumberOfCtns"]) + "</td>");
-                                sb.Append(@"<td>" + String.Format("{0:F1}", ds.Tables[0].Rows[i]["CBM"]) + "</td>");
+                                sb.Append(@"<td>" + strEdit + String.Format("{0:N0}", ds.Tables[0].Rows[i]["Quantity"]) + strEditEnd + "</td>");
+                                sb.Append(@"<td>" + strEdit + String.Format("{0}", ds.Tables[0].Rows[i]["Package"]) + strEditEnd + "</td>");
+                                sb.Append(@"<td>" + strEdit + String.Format("{0:N0}", ds.Tables[0].Rows[i]["PcsPerCtn"]) + strEditEnd + "</td>");
+                                sb.Append(@"<td>" + strEdit + String.Format("{0:F1}", ds.Tables[0].Rows[i]["CtnWgtInKg"]) + strEditEnd + "</td>");
+                                sb.Append(@"<td>" + strEdit + String.Format("{0:F1}", ds.Tables[0].Rows[i]["CtnSizeInCML"]) + strEditEnd + "</td>");
+                                sb.Append(@"<td>" + strEdit + String.Format("{0:F1}", ds.Tables[0].Rows[i]["CtnSizeInCMW"]) + strEditEnd + "</td>");
+                                sb.Append(@"<td>" + strEdit + String.Format("{0:F1}", ds.Tables[0].Rows[i]["CtnSizeInCMH"]) + strEditEnd + "</td>");
+                                sb.Append(@"<td>" + strEdit + String.Format("{0:N0}", ds.Tables[0].Rows[i]["NumberOfCtns"]) + strEditEnd + "</td>");
+                                sb.Append(@"<td>" + strEdit + String.Format("{0:F1}", ds.Tables[0].Rows[i]["CBM"]) + strEditEnd + "</td>");
                                 if (ds.Tables[0].Rows[i]["LeadTime"].ToString() == "")
                                     sb.Append(@"<td></td>");
                                 else
-                                    sb.Append(@"<td>" + ds.Tables[0].Rows[i]["LeadTime"] + " days after approval</td>");
-                                sb.Append(@"<td>" + String.Format("{0:C2}", ds.Tables[0].Rows[i]["SellPrice"]) + "</td>");
-                                sb.Append(@"<td>" + String.Format("{0:C2}", ds.Tables[0].Rows[i]["Duties"]) + "</td>");
-                                sb.Append(@"<td>" + String.Format("{0:C2}", ds.Tables[0].Rows[i]["Freight"]) + "</td>");
-                                sb.Append(@"<td>" + String.Format("{0:C2}", ds.Tables[0].Rows[i]["Fees"]) + "</td>");
-                                sb.Append(@"<td>" + String.Format("{0:C2}", ds.Tables[0].Rows[i]["TotalPrice"]) + "</td>");
+                                    sb.Append(@"<td>" + strEdit + ds.Tables[0].Rows[i]["LeadTime"] + strEditEnd + " days after approval</td>");
+                                sb.Append(@"<td>" + strEdit + String.Format("{0:C2}", ds.Tables[0].Rows[i]["SellPrice"]) + strEditEnd + "</td>");
+                                sb.Append(@"<td>" + strEdit + String.Format("{0:C2}", ds.Tables[0].Rows[i]["Duties"]) + strEditEnd + "</td>");
+                                sb.Append(@"<td>" + strEdit + String.Format("{0:C2}", ds.Tables[0].Rows[i]["Freight"]) + strEditEnd + "</td>");
+                                sb.Append(@"<td>" + strEdit + String.Format("{0:C2}", ds.Tables[0].Rows[i]["Fees"]) + strEditEnd + "</td>");
+                                sb.Append(@"<td>" + strEdit + String.Format("{0:C2}", ds.Tables[0].Rows[i]["TotalPrice"]) + strEditEnd + "</td>");
                                 sb.Append(@"</tr>");  
                             }
                         }
@@ -522,13 +524,13 @@ namespace MyDemo
                             sb.Append(@"    </div>");
                             sb.Append(@"</td>");
                             sb.Append(@"<td rowspan=""5"">");
-                            sb.Append(@"    <p>ITEM: " + itemNum + @"</p>");
-                            sb.Append(@"    <p>NAME: " + ProductName + @"</p>");
-                            sb.Append(@"    <p>Setup: $ " + Setup + @"</p>");
-                            sb.Append(@"    <p>Mold Fee: $ " + MoldFee + @"</p>");
-                            sb.Append(@"    <p>Testing: $ " + Testing + @"</p>");
-                            sb.Append(@"    <p>Pre-Pro: $ " + PrePro + @"</p>");
-                            sb.Append(@"    <p>Pre-Pro Time: $ " + PreProTime + @"</p>");
+                            sb.Append(@"    <p>ITEM: " + strEdit + itemNum + strEditEnd + @"</p>");
+                            sb.Append(@"    <p>NAME: " + strEdit + ProductName + strEditEnd + @"</p>");
+                            sb.Append(@"    <p>Setup: $ " + strEdit + Setup + strEditEnd + @"</p>");
+                            sb.Append(@"    <p>Mold Fee: $ " + strEdit + MoldFee + strEditEnd + @"</p>");
+                            sb.Append(@"    <p>Testing: $ " + strEdit + Testing + strEditEnd + @"</p>");
+                            sb.Append(@"    <p>Pre-Pro: $ " + strEdit + PrePro + strEditEnd + @"</p>");
+                            sb.Append(@"    <p>Pre-Pro Time: $ " + strEdit + PreProTime + strEditEnd + @"</p>");
                             sb.Append(@"</td>");
                         }
                         sb.Append(@"<td></td>");

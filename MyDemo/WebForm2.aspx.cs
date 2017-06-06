@@ -13,8 +13,8 @@ namespace MyDemo
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string connectionString = "Server=ccastweb.com; Integrated Security=SSPI; User ID=AChen; Password=Andrew1; Initial Catalog=Elite; Trusted_Connection=yes; connection timeout=150;";
-            //string connectionString = @"Server=(localdb)\MSSQLLocalDB; Integrated Security=true; Initial Catalog=Elite; Trusted_Connection=yes; connection timeout=150;";
+            //string connectionString = "Server=ccastweb.com; Integrated Security=SSPI; User ID=AChen; Password=Andrew1; Initial Catalog=Elite; Trusted_Connection=yes; connection timeout=150;";
+            string connectionString = @"Server=(localdb)\MSSQLLocalDB; Integrated Security=true; Initial Catalog=Elite; Trusted_Connection=yes; connection timeout=150;";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 try
